@@ -159,14 +159,14 @@ Simple command (ubuntu)
 - dig www.ebay.com - show info about website
 - netstat - show ports
 - wget (link from internet) - download from internet
-***Ubuntu Debian
+### Ubuntu Debian
 - apt-get install openssh-server - install software
 - whereis openssh-server
 - apt-get remove openssh-server - remove software
 - cat /etc/apt/sources.list - repositories
 - dpkg -i (install) package-name.deb - install .deb
 - dpkg -r (remove) package-name - remove package
-***RedHat Centos
+### RedHat Centos
 - yum install inkscape - install inkscape
 - yum remove inkscape - remove inkscape
 - rpm -i (install) nethack.rpm - install .rpm
