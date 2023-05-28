@@ -69,7 +69,6 @@ Simple command (ubuntu)
 - [0-9]* - numbers
 - [A-Za-z]*@*[A-Za-z]*.com - email
 - www\.[a-z]*\.com - web adress
-
 - ' > - sent output
 - sort names.txt > names_sortes.txt
 - ' >> - append output
@@ -99,3 +98,82 @@ Simple command (ubuntu)
 - unzip myzip.zip
 
 ### 6 Lesson --------------------
+
+- top - task manager / cpu / task / Mem
+- schift P - sort processors, schift M - sort Memory
+- free - memory use
+- free -h - human memory use
+- ps - user process
+- ps -u joos - all joos process
+- ps -aux - all users process
+- cd /var/log - all logs
+- dmesg - kernel log
+- nano file.txt  Ctrl + O / Ctrl +  X
+- vi
+- i - write
+- Esc - end write
+- :w - save
+- :q - quit
+- :wq!(! - disable errors) vi.txt - save vi.txt quit
+
+### 7 Lesson --------------------
+
+- cat /etc/passwd - users
+- cat /etc/shadow - password list
+- cat /etc/group - groups with user
+- whoami - show who user now
+- id user1 - show user1-id, groups-id
+- last - last system login
+- who - who is now in system
+- w - who is on and what do
+- useradd -m user1 - add user1 with home directory
+- passwd user1 - update password user1
+- cd /etc/skel - template for user home directory
+- userdel -r user1 - remove user and group
+- userdel user1 - remove only user
+- groupadd group1 - add group
+- groupdel group1 - remove group
+- usermod -aG(add group) group1 user1 - add user1 to group1
+- deluser user1 group1 - remove user1 from group1
+
+### 8 Lesson --------------------
+
+- chown user2 dir123 - change owner(user2) dir123
+- chgrp group2 test.txt change group(group2) text.txt
+- chmod o+x text.txt - change rights (add x) for other (o)
+- chmod g-w text.txt - change rights (del w) for group (g)
+- chmod g-w,o+w text2.txt
+- chmod ugo(or a=all)=r text.txt - change rights user+group+other = read
+- r = 4 w = 2 x = 1
+- chmod 777 text.txt
+- chmod o+t mydir - add sticky bit - only owner can delete in folder
+- chmod o-t mydir = chmod 1777 mydir
+- ifconfig / ip a
+- ip addr show
+- route
+- ip route show
+- ping
+- ping -c 4
+- traceroute
+- host www.ebay.com - show ip(info) about website
+- dig www.ebay.com - show info about website
+- netstat - show ports
+- wget (link from internet) - download from internet
+***Ubuntu Debian
+- apt-get install openssh-server - install software
+- whereis openssh-server
+- apt-get remove openssh-server - remove software
+- cat /etc/apt/sources.list - repositories
+- dpkg -i (install) package-name.deb - install .deb
+- dpkg -r (remove) package-name - remove package
+***RedHat Centos
+- yum install inkscape - install inkscape
+- yum remove inkscape - remove inkscape
+- rpm -i (install) nethack.rpm - install .rpm
+- rpm -e (erase) nethack - erase .rpm
+- reboot now
+- shutdown now
+
+### 9 Lesson --------------------
+
+- 
