@@ -173,6 +173,3 @@ Simple command (ubuntu)
 - rpm -e (erase) nethack - erase .rpm
 - reboot now
 - shutdown now
-
-
-- 
