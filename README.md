@@ -62,4 +62,40 @@ Simple command (ubuntu)
 ### 4 Lesson --------------------
 
 - grep linux (what) ./* (who) - find file with word linux in direcory
-- 
+- grep -i (ignore key sensitive) linux ./*
+- grep .gov mydata.doc - find string with .gov in file
+- grep -E(regexp) "[A-Za-z\.]*@*[A-Za-z].gov" mydata.doc - find pattern (email .gov) in file
+- [A-Z]* - capital letters
+- [0-9]* - numbers
+- [A-Za-z]*@*[A-Za-z]*.com - email
+- www\.[a-z]*\.com - web adress
+
+- ' > - sent output
+- sort names.txt > names_sortes.txt
+- ' >> - append output
+- sort numbers >> names_sorted.txt
+- sort names.txt > names.txt - erase file (because first make names.txt then sort empty file)
+- 2> error stream
+- grep joos /etc/* 2> errors.txt - send errors (permission denied) to errors.txt
+- grep joos /etc/* 2> /dev/null - send errors to null
+- grep joos /etc/* > good/.txt 2> nogood.txt - separation good and nogood output
+- &> - > + 2> - to 1 file
+
+### 5 Lesson --------------------
+
+- tar cvf(create verbose file) mytar.tar folder1 - tar folder1 ro mytar
+- tar tf(test file) mytar.tar - look inside mytar
+- tar xvf(extract verbose file) mytar.tar - extract tar
+- gzip  bzip2 xz - compression file command
+- gzip mytar.tar - make mytar.tar.gz and compress
+- gunzip mytar.tar.gz - unzip
+- bzip2 / bunzip2 - compress, decompress
+- xz / unxz - compress, decompress
+- tar cvzf(zip-compress) myzip.gz Folder1 - tar + gzip compress
+- tar cjf(j - bzip2) mybzip.bz2 Folder1
+- tar cJf(J -xz) myxz.xz Folder1
+- tar xvf myzip.gz (mybzip.bz2 myxz.xz) - extract
+- zip -r myzip.zip Folder1
+- unzip myzip.zip
+
+### 6 Lesson --------------------
