@@ -174,6 +174,5 @@ Simple command (ubuntu)
 - reboot now
 - shutdown now
 
-### 9 Lesson --------------------
 
 - 
