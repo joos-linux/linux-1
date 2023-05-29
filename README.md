@@ -3,6 +3,8 @@ Simple command (ubuntu)
 
 # 1 Lesson
 
+- df - check memory
+- df -h /dev/sda2 - check sda2
 - uptime - system time / work
 - uname - about system
 - uname -a - about system all
@@ -23,6 +25,9 @@ Simple command (ubuntu)
 - fg - show bsckground process
 - ctrl + c - stop process
 - ls -la -R / -show all files, directories
+- cat /proc/meminfo - Memory info
+- du -sh /Desktop - Desktop size
+- ss -tulpn - open ports
 
 ### 2 Lesson --------------------
 
