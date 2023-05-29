@@ -31,6 +31,8 @@ Simple command (ubuntu)
 - ps -aux - all users process
 - cd /var/log - all logs
 - dmesg - kernel log
+- alias - show all alias
+- alias ll="ls -l" - create alias
 
 
 ### 2 Lesson --------------------
