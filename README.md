@@ -5,10 +5,38 @@ Simple command (ubuntu)
 
 - df - check memory
 - df -h /dev/sda2 - check sda2
+- du -sh /Desktop - Desktop size
+- lscpu - system hardware
+- uname -a - about system all
+- ss -tulpn - open ports
+- pwd - print working directory
+- ln -s(symbolic link) /home/user/Dociments/dir1 MyLinkDir - make symbolic link dir
+- ln -s file.txt MyFile.txt - make symbolic link file 
+- ln file.txt fileDuplicate - make duplicate (only file)
+- find /home(where) -name "*.txt*" -  find all txt-file in home-directory
+- find / -name readme.txt - find readme in /
+- wc test.txt - show (-w) words, (-l) lines, symbols
+- cut -d ">" (<-delimeter) -f 3 (number column) example.txt - show only 3. column in file
+- cut -d ">" -f 3 example.txt | sort | wc - show and sort
+- | - pipe - send output farther
+- tar cvf(create verbose file) mytar.tar folder1 - tar folder1 ro mytar
+- tar tf(test file) mytar.tar - look inside mytar
+- tar xvf(extract verbose file) mytar.tar - extract tar
+- top - task manager / cpu / task / Mem
+- schift P - sort processors, schift M - sort Memory
+- free - memory use
+- free -h - human memory use
+- ps - user process
+- ps -u joos - all joos process
+- ps -aux - all users process
+- cd /var/log - all logs
+- dmesg - kernel log
+
+
+### 2 Lesson --------------------
+
 - uptime - system time / work
 - uname - about system
-- uname -a - about system all
-- lscpu - system hardware
 - ls - list directory contents
 - ls -l - show more
 - echo $PATH - programm path
@@ -19,21 +47,15 @@ Simple command (ubuntu)
 - info uptime - show info uptime
 - whatis uptime - show short info uptime
 - whereis uptime - show uptime path (only system file)
-- locate uptime (or readme.txt) (only system file?)
+- locate uptime - sudo apt install mlocate !!!
 - ps - show process
 - ctrl + z - background process (ping)
 - fg - show bsckground process
 - ctrl + c - stop process
 - ls -la -R / -show all files, directories
 - cat /proc/meminfo - Memory info
-- du -sh /Desktop - Desktop size
-- ss -tulpn - open ports
-
-### 2 Lesson --------------------
-
 - cd / - move to directory
 - ls -la - show description + hidden file
-- pwd - print working directory
 - cat text.txt - read text
 - more text.txt - read text
 - less text.txt - read text
@@ -43,29 +65,14 @@ Simple command (ubuntu)
 - cp -v - verbose - show copy
 - cp -R - recursive - copy file in directory to other directory
 - rm test.txt - remove
-- mv test.txt .text.txt - move/rename
-
-### 3 Lesson --------------------
-
+- mv test.txt text1.txt - move/rename
 - mkdir - make dir
 - mv dir1 newdir1 - move dir
 - rmdir dir1 - rm empty dir
 - rm -R dir1 - rm all dir
 - cp dir1 dir4 - copy dir
-- ln -s(symbolic link) /home/user/Dociments/dir1 MyLinkDir - make symbolic link dir
-- ln -s file.txt MyFile.txt - make symbolic link file 
-- ln file.txt fileDuplicate - make duplicate (only file)
-- find /home(where) -name "*.txt*" -  find all txt-file in home-directory
-- find / -name readme.txt - find readme in /
-- wc test.txt - show (-w) words, (-l) lines, symbols
 - sort - names.txt - show sort names in file
 - sort -n numbers.txt - show sort numbers in file (sort num (1,2,11) not symbols(1,11,2))
-- cut -d ">" (<-delimeter) -f 3 (number column) example.txt - show only 3. column in file
-- cut -d ">" -f 3 example.txt | sort | wc - show and sort
-- | - pipe - send output farther
-
-### 4 Lesson --------------------
-
 - grep linux (what) ./* (who) - find file with word linux in direcory
 - grep -i (ignore key sensitive) linux ./*
 - grep .gov mydata.doc - find string with .gov in file
@@ -84,12 +91,6 @@ Simple command (ubuntu)
 - grep joos /etc/* 2> /dev/null - send errors to null
 - grep joos /etc/* > good/.txt 2> nogood.txt - separation good and nogood output
 - &> - > + 2> - to 1 file
-
-### 5 Lesson --------------------
-
-- tar cvf(create verbose file) mytar.tar folder1 - tar folder1 ro mytar
-- tar tf(test file) mytar.tar - look inside mytar
-- tar xvf(extract verbose file) mytar.tar - extract tar
 - gzip  bzip2 xz - compression file command
 - gzip mytar.tar - make mytar.tar.gz and compress
 - gunzip mytar.tar.gz - unzip
@@ -102,17 +103,8 @@ Simple command (ubuntu)
 - zip -r myzip.zip Folder1
 - unzip myzip.zip
 
-### 6 Lesson --------------------
+### 3 Lesson --------------------
 
-- top - task manager / cpu / task / Mem
-- schift P - sort processors, schift M - sort Memory
-- free - memory use
-- free -h - human memory use
-- ps - user process
-- ps -u joos - all joos process
-- ps -aux - all users process
-- cd /var/log - all logs
-- dmesg - kernel log
 - nano file.txt  Ctrl + O / Ctrl +  X
 - vi
 - i - write
@@ -120,9 +112,6 @@ Simple command (ubuntu)
 - :w - save
 - :q - quit
 - :wq!(! - disable errors) vi.txt - save vi.txt quit
-
-### 7 Lesson --------------------
-
 - cat /etc/passwd - users
 - cat /etc/shadow - password list
 - cat /etc/group - groups with user
@@ -140,9 +129,6 @@ Simple command (ubuntu)
 - groupdel group1 - remove group
 - usermod -aG(add group) group1 user1 - add user1 to group1
 - deluser user1 group1 - remove user1 from group1
-
-### 8 Lesson --------------------
-
 - chown user2 dir123 - change owner(user2) dir123
 - chgrp group2 test.txt change group(group2) text.txt
 - chmod o+x text.txt - change rights (add x) for other (o)
